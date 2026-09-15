@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : hierarchy
+Design : msrv32_alu
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 13:55:10 2025
+****************************************
+
+Attributes:
+    r - licensed design
+
+msrv32_alu         r
+    AND2X1_LVT           saed32lvt_ss0p95v125c   0.95
+    AND2X2_LVT           saed32lvt_ss0p95v125c   0.95
+    AND3X1_LVT           saed32lvt_ss0p95v125c   0.95
+    AND4X1_LVT           saed32lvt_ss0p95v125c   0.95
+    AO21X1_LVT           saed32lvt_ss0p95v125c   0.95
+    AO22X1_LVT           saed32lvt_ss0p95v125c   0.95
+    AO221X1_LVT          saed32lvt_ss0p95v125c   0.95
+    AO222X1_LVT          saed32lvt_ss0p95v125c   0.95
+    AOI21X1_LVT          saed32lvt_ss0p95v125c   0.95
+    AOI22X1_LVT          saed32lvt_ss0p95v125c   0.95
+    FADDX1_LVT           saed32lvt_ss0p95v125c   0.95
+    HADDX1_LVT           saed32lvt_ss0p95v125c   0.95
+    INVX1_LVT            saed32lvt_ss0p95v125c   0.95
+    INVX2_LVT            saed32lvt_ss0p95v125c   0.95
+    INVX4_LVT            saed32lvt_ss0p95v125c   0.95
+    MUX41X1_LVT          saed32lvt_ss0p95v125c   0.95
+    NAND2X0_LVT          saed32lvt_ss0p95v125c   0.95
+    NAND2X2_LVT          saed32lvt_ss0p95v125c   0.95
+    NAND2X4_LVT          saed32lvt_ss0p95v125c   0.95
+    NAND3X0_LVT          saed32lvt_ss0p95v125c   0.95
+    NAND4X0_LVT          saed32lvt_ss0p95v125c   0.95
+    NBUFFX4_LVT          saed32lvt_ss0p95v125c   0.95
+    NOR3X0_LVT           saed32lvt_ss0p95v125c   0.95
+    NOR4X1_LVT           saed32lvt_ss0p95v125c   0.95
+    OA21X1_LVT           saed32lvt_ss0p95v125c   0.95
+    OA22X1_LVT           saed32lvt_ss0p95v125c   0.95
+    OA221X1_LVT          saed32lvt_ss0p95v125c   0.95
+    OA222X1_LVT          saed32lvt_ss0p95v125c   0.95
+    OAI22X1_LVT          saed32lvt_ss0p95v125c   0.95
+    OAI221X1_LVT         saed32lvt_ss0p95v125c   0.95
+    OR2X1_LVT            saed32lvt_ss0p95v125c   0.95
+    OR3X1_LVT            saed32lvt_ss0p95v125c   0.95
+1
