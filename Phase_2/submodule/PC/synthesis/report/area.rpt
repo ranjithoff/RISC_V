@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : msrv32_pc
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 14:09:20 2025
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_ss0p95v125c (File: /home1/PD09/RanjithKC/VLSI_PD/Project/router_pnr_flow/ref/DBs/saed32lvt_ss0p95v125c.db)
+
+Number of ports:                          229
+Number of nets:                           387
+Number of cells:                          255
+Number of combinational cells:            223
+Number of sequential cells:                32
+Number of macros/black boxes:               0
+Number of buf/inv:                         33
+Number of references:                      16
+
+Combinational area:                470.928839
+Buf/Inv area:                       44.475200
+Noncombinational area:             162.652161
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   633.580999
+Total area:                 undefined
+1

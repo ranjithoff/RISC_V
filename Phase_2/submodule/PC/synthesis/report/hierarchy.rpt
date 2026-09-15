@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : hierarchy
+Design : msrv32_pc
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 14:09:20 2025
+****************************************
+
+Attributes:
+    r - licensed design
+
+msrv32_pc          r
+    AND2X1_LVT          saed32lvt_ss0p95v125c    0.95
+    AND2X4_LVT          saed32lvt_ss0p95v125c    0.95
+    AND3X4_LVT          saed32lvt_ss0p95v125c    0.95
+    AO22X1_LVT          saed32lvt_ss0p95v125c    0.95
+    AO222X1_LVT         saed32lvt_ss0p95v125c    0.95
+    HADDX1_LVT          saed32lvt_ss0p95v125c    0.95
+    INVX1_LVT           saed32lvt_ss0p95v125c    0.95
+    LATCHX1_LVT         saed32lvt_ss0p95v125c    0.95
+    NAND2X0_LVT         saed32lvt_ss0p95v125c    0.95
+    NAND3X0_LVT         saed32lvt_ss0p95v125c    0.95
+    NAND4X0_LVT         saed32lvt_ss0p95v125c    0.95
+    NBUFFX8_LVT         saed32lvt_ss0p95v125c    0.95
+    NOR2X4_LVT          saed32lvt_ss0p95v125c    0.95
+    OA21X1_LVT          saed32lvt_ss0p95v125c    0.95
+    OA221X1_LVT         saed32lvt_ss0p95v125c    0.95
+    OR2X1_LVT           saed32lvt_ss0p95v125c    0.95
+1

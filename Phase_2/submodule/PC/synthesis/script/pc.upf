@@ -1,0 +1,13 @@
+create_supply_net VDD
+create_supply_net VSS
+
+create_power_domain pc -include_scope 
+set_domain_supply_net  pc -primary_power_net VDD -primary_ground_net VSS
+
+create_supply_port VDD -domain pc -direction in
+create_supply_port VSS -domain pc -direction in
+
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS
+
+
