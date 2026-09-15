@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : design
+Design : msrv32_store_unit
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 16:58:06 2025
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /home1/PD09/RanjithKC/VLSI_PD/Project/router_pnr_flow/ref/DBs/saed32lvt_ss0p75v125c.db)
+
+Local Link Library:
+
+    {/home1/PD09/RanjithKC/VLSI_PD/Project/router_pnr_flow/ref/DBs/saed32lvt_ss0p75v125c.db, /home1/PD09/RanjithKC/VLSI_PD/Project/router_pnr_flow/ref/DBs/saed32rvt_ss0p75v125c.db, /home1/PD09/RanjithKC/VLSI_PD/Project/router_pnr_flow/ref/DBs/saed32hvt_ss0p75v125c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : max
+    Library : saed32lvt_ss0p75v125c
+    Process :   0.99
+    Temperature : 125.00
+    Voltage :   0.75
+    Interconnect Model : balanced_tree
+
+Min Operating Conditions:
+
+
+    Operating Condition Name : min
+    Library : saed32hvt_ss0p75v125c
+    Process :   0.99
+    Temperature : 125.00
+    Voltage :   0.75
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading used.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1

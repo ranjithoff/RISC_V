@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : hierarchy
+Design : msrv32_store_unit
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 16:58:06 2025
+****************************************
+
+msrv32_store_unit
+    AND2X1_LVT          saed32lvt_ss0p75v125c    0.75
+    AND3X1_LVT          saed32lvt_ss0p75v125c    0.75
+    AND4X1_LVT          saed32lvt_ss0p75v125c    0.75
+    AO21X1_LVT          saed32lvt_ss0p75v125c    0.75
+    AO22X1_LVT          saed32lvt_ss0p75v125c    0.75
+    AO222X1_LVT         saed32lvt_ss0p75v125c    0.75
+    INVX1_LVT           saed32lvt_ss0p75v125c    0.75
+    LATCHX1_LVT         saed32lvt_ss0p75v125c    0.75
+    NAND2X0_LVT         saed32lvt_ss0p75v125c    0.75
+    OA21X1_LVT          saed32lvt_ss0p75v125c    0.75
+    OA221X1_LVT         saed32lvt_ss0p75v125c    0.75
+    OR2X1_LVT           saed32lvt_ss0p75v125c    0.75
+1

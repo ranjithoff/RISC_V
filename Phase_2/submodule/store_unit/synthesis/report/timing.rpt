@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_store_unit
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 16:58:06 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: iadder_in[1]
+              (input port)
+  Endpoint: wr_mask_out[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path      Voltage
+  ---------------------------------------------------------------------
+  input external delay                     0.00       0.00 r    
+  iadder_in[1] (in)                        0.00       0.00 r    
+  U60/Y (INVX1_LVT)                        0.02 *     0.02 f    0.75
+  U62/Y (AO21X1_LVT)                       0.14 *     0.16 f    0.75
+  U63/Y (AO21X1_LVT)                       0.13 *     0.28 f    0.75
+  U64/Y (AND2X1_LVT)                       0.09 *     0.38 f    0.75
+  wr_mask_out[0] (out)                     0.00 *     0.38 f    
+  data arrival time                                   0.38      
+  ---------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
