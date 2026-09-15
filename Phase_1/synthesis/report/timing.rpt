@@ -1,0 +1,115 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_top
+Version: T-2022.03-SP4
+Date   : Mon Sep 22 22:23:47 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32lvt_ss0p95v125c
+Wire Load Model Mode: Inactive.
+
+  Startpoint: REG2/alu_src_reg_out_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: REG1/pc_out_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG2/alu_src_reg_out_reg/CLK (DFFX1_LVT)                0.00       0.00 r
+  REG2/alu_src_reg_out_reg/Q (DFFX1_LVT)                  0.11       0.11 f
+  REG2/alu_src_reg_out (msrv32_reg_block_2)               0.00       0.11 f
+  WBMUX/alu_source_reg_in (msrv32_wb_mux_sel_unit)        0.00       0.11 f
+  WBMUX/U5/Y (NBUFFX4_LVT)                                0.06 *     0.17 f
+  WBMUX/U9/Y (INVX1_LVT)                                  0.05 *     0.22 r
+  WBMUX/U45/Y (AO22X2_LVT)                                0.12 *     0.34 r
+  WBMUX/alu_2nd_src_mux_out[1] (msrv32_wb_mux_sel_unit)
+                                                          0.00       0.34 r
+  ALU/op_2_in[1] (msrv32_alu)                             0.00       0.34 r
+  ALU/U231/Y (INVX1_LVT)                                  0.05 *     0.39 f
+  ALU/U80/Y (OR2X1_LVT)                                   0.05 *     0.44 f
+  ALU/U85/Y (AO22X1_LVT)                                  0.05 *     0.49 f
+  ALU/U90/Y (OR3X1_LVT)                                   0.07 *     0.56 f
+  ALU/U366/Y (INVX1_LVT)                                  0.02 *     0.59 r
+  ALU/U371/Y (OA21X1_LVT)                                 0.05 *     0.64 r
+  ALU/U372/Y (NOR2X0_LVT)                                 0.06 *     0.70 f
+  ALU/U575/Y (NOR3X0_LVT)                                 0.07 *     0.76 r
+  ALU/U576/Y (NOR2X0_LVT)                                 0.05 *     0.82 f
+  ALU/U577/Y (OR2X1_LVT)                                  0.05 *     0.86 f
+  ALU/U578/Y (NOR3X0_LVT)                                 0.06 *     0.92 r
+  ALU/U579/Y (OR2X1_LVT)                                  0.05 *     0.97 r
+  ALU/U584/Y (AO22X1_LVT)                                 0.05 *     1.03 r
+  ALU/U585/Y (OAI22X1_LVT)                                0.05 *     1.08 f
+  ALU/U586/Y (OR2X1_LVT)                                  0.04 *     1.12 f
+  ALU/U599/Y (AO21X1_LVT)                                 0.05 *     1.18 f
+  ALU/U600/Y (INVX1_LVT)                                  0.03 *     1.21 r
+  ALU/U847/Y (AO21X1_LVT)                                 0.06 *     1.27 r
+  ALU/U848/Y (INVX1_LVT)                                  0.01 *     1.28 f
+  ALU/U851/Y (OA21X1_LVT)                                 0.05 *     1.33 f
+  ALU/U1835/Y (AOI21X1_LVT)                               0.07 *     1.41 r
+  ALU/U1836/Y (INVX1_LVT)                                 0.01 *     1.42 f
+  ALU/U1837/Y (OA21X1_LVT)                                0.04 *     1.46 f
+  ALU/U1855/Y (INVX1_LVT)                                 0.02 *     1.48 r
+  ALU/U1856/Y (AND2X1_LVT)                                0.03 *     1.51 r
+  ALU/U1857/Y (INVX1_LVT)                                 0.01 *     1.53 f
+  ALU/U1858/Y (OAI22X1_LVT)                               0.06 *     1.58 r
+  ALU/U1859/Y (OR2X1_LVT)                                 0.04 *     1.62 r
+  ALU/U1860/Y (OR2X1_LVT)                                 0.04 *     1.66 r
+  ALU/U1876/Y (NAND3X0_LVT)                               0.05 *     1.70 f
+  ALU/result_out[31] (msrv32_alu)                         0.00       1.70 f
+  WBMUX/alu_result_in[31] (msrv32_wb_mux_sel_unit)        0.00       1.70 f
+  WBMUX/U61/Y (AO21X2_LVT)                                0.09 *     1.79 f
+  WBMUX/wb_mux_out[31] (msrv32_wb_mux_sel_unit)           0.00       1.79 f
+  U13/Y (NBUFFX8_LVT)                                     0.07 *     1.86 f
+  IRF/rd_in[31] (msrv32_integer_file)                     0.00       1.86 f
+  IRF/U309/Y (INVX1_LVT)                                  0.02 *     1.89 r
+  IRF/U579/Y (NOR2X0_LVT)                                 0.05 *     1.94 f
+  IRF/U580/Y (OR4X1_LVT)                                  0.08 *     2.02 f
+  IRF/rs_1_out[31] (msrv32_integer_file)                  0.00       2.02 f
+  BU/rs1_in[31] (msrv32_bu)                               0.00       2.02 f
+  BU/U14/Y (INVX1_LVT)                                    0.02 *     2.04 r
+  BU/U15/Y (AND2X1_LVT)                                   0.04 *     2.08 r
+  BU/U177/Y (NOR2X0_LVT)                                  0.06 *     2.14 f
+  BU/U178/Y (INVX1_LVT)                                   0.02 *     2.15 r
+  BU/U237/Y (OR4X1_LVT)                                   0.10 *     2.25 r
+  BU/U244/Y (OR2X1_LVT)                                   0.04 *     2.29 r
+  BU/U245/Y (INVX1_LVT)                                   0.01 *     2.30 f
+  BU/U246/Y (NOR3X0_LVT)                                  0.06 *     2.36 r
+  BU/U249/Y (OR3X1_LVT)                                   0.05 *     2.41 r
+  BU/U250/Y (AOI21X1_LVT)                                 0.06 *     2.47 f
+  BU/U251/Y (OR3X1_LVT)                                   0.06 *     2.53 f
+  BU/branch_taken_out (msrv32_bu)                         0.00       2.53 f
+  PC/branch_taken_in (msrv32_pc)                          0.00       2.53 f
+  PC/U65/Y (AND2X2_LVT)                                   0.08 *     2.61 f
+  PC/U76/Y (INVX2_LVT)                                    0.05 *     2.67 r
+  PC/U246/Y (NOR2X0_LVT)                                  0.06 *     2.73 f
+  PC/U247/Y (OR3X1_LVT)                                   0.04 *     2.76 f
+  PC/U248/Y (AO21X1_LVT)                                  0.04 *     2.80 f
+  PC/pc_mux_out[12] (msrv32_pc)                           0.00       2.80 f
+  REG1/pc_mux_in[12] (msrv32_reg_block_1)                 0.00       2.80 f
+  REG1/U16/Y (AND2X1_LVT)                                 0.04 *     2.84 f
+  REG1/pc_out_reg[12]/D (DFFX1_LVT)                       0.00 *     2.84 f
+  data arrival time                                                  2.84
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  REG1/pc_out_reg[12]/CLK (DFFX1_LVT)                     0.00       3.00 r
+  library setup time                                     -0.03       2.97
+  data required time                                                 2.97
+  --------------------------------------------------------------------------
+  data required time                                                 2.97
+  data arrival time                                                 -2.84
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+1
