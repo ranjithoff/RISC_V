@@ -1,0 +1,5 @@
+create_workspace -technology ../../../../../../router_pnr_flow/ref/tech/saed32nm_1p9m.tf -flow normal msrv32_immediate_adder_ndm
+read_gds ../../pnr/output/Immediate_adder.gds
+set_attribute [get_lib_cells msrv32_immediate_adder] design_type macro
+check_workspace
+commit_workspace -output ../output/msrv32_immediate_adder.ndm
