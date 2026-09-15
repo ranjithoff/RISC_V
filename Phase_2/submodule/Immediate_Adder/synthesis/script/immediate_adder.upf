@@ -1,0 +1,11 @@
+create_supply_net VDD
+create_supply_net VSS
+
+create_power_domain immediate_adder -include_scope 
+set_domain_supply_net  immediate_adder -primary_power_net VDD -primary_ground_net VSS
+
+create_supply_port VDD -domain immediate_adder -direction in
+create_supply_port VSS -domain immediate_adder -direction in
+
+connect_supply_net VDD -ports VDD
+connect_supply_net VSS -ports VSS

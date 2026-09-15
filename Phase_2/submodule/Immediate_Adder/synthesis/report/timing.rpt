@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_immediate_adder
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 18:06:45 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: iadder_src_in
+              (input port)
+  Endpoint: iadder_out[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path      Voltage
+  ---------------------------------------------------------------------
+  input external delay                     0.00       0.00 f    
+  iadder_src_in (in)                       0.00       0.00 f    
+  U17/Y (INVX2_LVT)                        0.06 *     0.06 r    0.75
+  U35/Y (AO22X1_LVT)                       0.09 *     0.15 r    0.75
+  U69/C1 (HADDX1_LVT)                      0.08 *     0.23 r    0.75
+  U68/CO (FADDX1_LVT)                      0.10 *     0.34 r    0.75
+  U67/CO (FADDX1_LVT)                      0.11 *     0.45 r    0.75
+  U66/CO (FADDX1_LVT)                      0.11 *     0.56 r    0.75
+  U65/CO (FADDX1_LVT)                      0.11 *     0.67 r    0.75
+  U64/CO (FADDX1_LVT)                      0.11 *     0.78 r    0.75
+  U63/CO (FADDX1_LVT)                      0.12 *     0.90 r    0.75
+  U62/CO (FADDX1_LVT)                      0.12 *     1.02 r    0.75
+  U61/CO (FADDX1_LVT)                      0.11 *     1.13 r    0.75
+  U60/CO (FADDX1_LVT)                      0.11 *     1.24 r    0.75
+  U59/CO (FADDX1_LVT)                      0.11 *     1.35 r    0.75
+  U58/CO (FADDX1_LVT)                      0.11 *     1.46 r    0.75
+  U57/CO (FADDX1_LVT)                      0.11 *     1.58 r    0.75
+  U56/CO (FADDX1_LVT)                      0.11 *     1.69 r    0.75
+  U55/CO (FADDX1_LVT)                      0.11 *     1.80 r    0.75
+  U54/CO (FADDX1_LVT)                      0.11 *     1.92 r    0.75
+  U53/CO (FADDX1_LVT)                      0.11 *     2.03 r    0.75
+  U52/CO (FADDX1_LVT)                      0.12 *     2.15 r    0.75
+  U51/CO (FADDX1_LVT)                      0.11 *     2.26 r    0.75
+  U50/CO (FADDX1_LVT)                      0.12 *     2.38 r    0.75
+  U49/CO (FADDX1_LVT)                      0.12 *     2.50 r    0.75
+  U48/CO (FADDX1_LVT)                      0.11 *     2.61 r    0.75
+  U47/CO (FADDX1_LVT)                      0.12 *     2.73 r    0.75
+  U46/CO (FADDX1_LVT)                      0.12 *     2.84 r    0.75
+  U45/CO (FADDX1_LVT)                      0.11 *     2.95 r    0.75
+  U44/CO (FADDX1_LVT)                      0.13 *     3.08 r    0.75
+  U43/CO (FADDX1_LVT)                      0.12 *     3.20 r    0.75
+  U42/CO (FADDX1_LVT)                      0.11 *     3.31 r    0.75
+  U41/CO (FADDX1_LVT)                      0.11 *     3.42 r    0.75
+  U40/CO (FADDX1_LVT)                      0.12 *     3.54 r    0.75
+  U39/CO (FADDX1_LVT)                      0.11 *     3.65 r    0.75
+  U38/Y (XOR2X1_LVT)                       0.12 *     3.77 f    0.75
+  iadder_out[31] (out)                     0.00 *     3.77 f    
+  data arrival time                                   3.77      
+  ---------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

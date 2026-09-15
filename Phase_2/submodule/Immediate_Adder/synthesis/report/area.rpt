@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : msrv32_immediate_adder
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 18:06:45 2025
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /home1/PD09/RanjithKC/VLSI_PD/Project/router_pnr_flow/ref/DBs/saed32lvt_ss0p75v125c.db)
+
+Number of ports:                          129
+Number of nets:                           195
+Number of cells:                           67
+Number of combinational cells:             67
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          2
+Number of references:                       5
+
+Combinational area:                241.182651
+Buf/Inv area:                        3.049728
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   241.182651
+Total area:                 undefined
+1

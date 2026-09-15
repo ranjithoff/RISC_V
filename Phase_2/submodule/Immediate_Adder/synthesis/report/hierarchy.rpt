@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : hierarchy
+Design : msrv32_immediate_adder
+Version: T-2022.03-SP4
+Date   : Thu Oct  9 18:06:45 2025
+****************************************
+
+Attributes:
+    r - licensed design
+
+msrv32_immediate_adder
+                   r
+    AO22X1_LVT         saed32lvt_ss0p75v125c     0.75
+    FADDX1_LVT         saed32lvt_ss0p75v125c     0.75
+    HADDX1_LVT         saed32lvt_ss0p75v125c     0.75
+    INVX2_LVT          saed32lvt_ss0p75v125c     0.75
+    XOR2X1_LVT         saed32lvt_ss0p75v125c     0.75
+1
