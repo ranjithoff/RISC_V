@@ -1,0 +1,18 @@
+Writing verilog file '/home1/PD09/RanjithKC/VLSI_PD/Project/Project_RISC_V/Phase_2/top_module/synthesis/output/risc_top_allfiles.v/msrv32_top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 63 nets to module msrv32_csr_file using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 12 nets to module msrv32_top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+1
+1
+Information: No Scenarios exist, writing data for one virtual_scenario
+Information: Creating directory ../output/risc_top_allfiles.v/msrv32_top.MCMM
+Information: The default DEF output is in version 5.8. (DCT-320)
+Information: Writing COMPONENTS section (DDEFW-014)
+Information: Completed COMPONENTS section  (DDEFW-016)
+Information: Writing PINS section (DDEFW-014)
+Information: Completed PINS section  (DDEFW-016)
+Information: No groups were written. (RPGP-018)
+1
+Warning: Failed to find cell expansion data in current design.  (PSYN-1240)
+0

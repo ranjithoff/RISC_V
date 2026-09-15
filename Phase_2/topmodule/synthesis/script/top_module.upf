@@ -1,0 +1,30 @@
+remove_upf
+
+load_upf ../../../sub_module/ALU/synthesis/script/alu.upf  -scope ALU
+load_upf ../../../sub_module/PC/synthesis/script/pc.upf -scope PC
+load_upf ../../../sub_module/Store_Unit/synthesis/script/store_unit.upf  -scope SU
+load_upf ../../../sub_module/Immediate_Adder/synthesis/script/immediate_adder.upf -scope imm_adder
+
+create_supply_net VDDR 
+create_supply_net VDDL 
+create_supply_net VSS  
+
+create_supply_set ss_right -function {power VDDR} -function {ground VSS}
+create_supply_set ss_left -function {power VDDL} -function {ground ss_right.ground}
+
+create_power_domain left  -supply {primary ss_left}
+create_power_domain right -elements {REG2 IRF} -supply {primary ss_right}
+
+create_supply_port VDDL -domain left  -direction in
+create_supply_port VDDR -domain right -direction in
+create_supply_port VSS -domain right -direction in
+
+
+connect_supply_net VDDR -ports {VDDR ALU/VDD PC/VDD}
+connect_supply_net VDDL -ports {VDDL SU/VDD imm_adder/VDD}
+connect_supply_net VSS -ports  {VSS ALU/VSS PC/VSS SU/VSS imm_adder/VSS}
+
+set_level_shifter right_ls_out -domain right -applies_to outputs -rule low_to_high -location parent
+set_level_shifter right_ls_in -domain right -applies_to inputs -rule high_to_low -location self
+
+

@@ -1,0 +1,89 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_top
+Version: T-2022.03-SP4
+Date   : Thu Nov 20 19:52:40 2025
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: REG2/csr_addr_reg_out_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MC/cause_out_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  REG2/csr_addr_reg_out_reg[5]/CLK (DFFX2_LVT)            0.00 #     0.00 r    0.95
+  REG2/csr_addr_reg_out_reg[5]/Q (DFFX2_LVT)              0.14       0.14 f    0.95
+  REG2/csr_addr_reg_out[5] (msrv32_reg_block_2)           0.00       0.14 f    
+  CSRF/csr_addr_in[5] (msrv32_csr_file)                   0.00       0.14 f    
+  CSRF/CDMU/csr_addr_in[5] (csr_data_mux_unit)            0.00       0.14 f    
+  CSRF/CDMU/U153/Y (OR4X4_LVT)                            0.19 *     0.33 f    0.75
+  CSRF/CDMU/U45/Y (OR3X2_LVT)                             0.11 *     0.44 f    0.75
+  CSRF/CDMU/U140/Y (NBUFFX4_LVT)                          0.09 *     0.53 f    0.75
+  CSRF/CDMU/U455/Y (OA22X1_LVT)                           0.08 *     0.61 f    0.75
+  CSRF/CDMU/U456/Y (INVX1_LVT)                            0.04 *     0.65 r    0.75
+  CSRF/CDMU/U457/Y (AO21X1_LVT)                           0.06 *     0.71 r    0.75
+  CSRF/CDMU/U458/Y (NOR4X0_LVT)                           0.13 *     0.84 f    0.75
+  CSRF/CDMU/U73/Y (INVX1_LVT)                             0.04 *     0.87 r    0.75
+  CSRF/CDMU/U69/Y (AO21X1_LVT)                            0.12 *     0.99 r    0.75
+  CSRF/CDMU/csr_data_out[10] (csr_data_mux_unit)          0.00       0.99 r    
+  CSRF/csr_data_out[10] (msrv32_csr_file)                 0.00       0.99 r    
+  WBMUX/csr_data_in[10] (msrv32_wb_mux_sel_unit)          0.00       0.99 r    
+  WBMUX/U257/Y (AO22X1_LVT)                               0.09 *     1.08 r    0.75
+  WBMUX/U140/Y (OR4X2_LVT)                                0.17 *     1.25 r    0.75
+  WBMUX/U260/Y (AO21X1_LVT)                               0.08 *     1.33 r    0.75
+  WBMUX/wb_mux_out[10] (msrv32_wb_mux_sel_unit)           0.00       1.33 r    
+  U71/Y (NBUFFX8_LVT)                                     0.09 *     1.43 r    0.75
+  IRF/rd_in[10] (msrv32_integer_file)                     0.00       1.43 r    
+  IRF/U1375/Y (AO21X1_LVT)                                0.07 *     1.49 r    0.95
+  IRF/rs_1_out[10] (msrv32_integer_file)                  0.00       1.49 r    
+  rs_1_out[10]_UPF_LS/Y (LSDNSSX4_LVT)                    0.08 *     1.57 r    0.75
+  BU/rs1_in[10] (msrv32_bu)                               0.00       1.57 r    
+  BU/U247/Y (XOR2X1_LVT)                                  0.14 *     1.71 f    0.75
+  BU/U251/Y (OR4X1_LVT)                                   0.19 *     1.90 f    0.75
+  BU/U255/Y (OR4X1_LVT)                                   0.16 *     2.06 f    0.75
+  BU/U256/Y (OR2X1_LVT)                                   0.07 *     2.12 f    0.75
+  BU/U257/Y (OR3X2_LVT)                                   0.10 *     2.22 f    0.75
+  BU/U258/Y (INVX1_LVT)                                   0.04 *     2.26 r    0.75
+  BU/U108/Y (AOI21X1_LVT)                                 0.10 *     2.36 f    0.75
+  BU/U270/Y (AO22X1_LVT)                                  0.06 *     2.42 f    0.75
+  BU/U298/Y (OR2X4_LVT)                                   0.12 *     2.54 f    0.75
+  BU/branch_taken_out (msrv32_bu)                         0.00       2.54 f    
+  PC/branch_taken_in (msrv32_pc)                          0.00       2.54 f    
+  PC/U433/Y (AND2X1_LVT)                                  0.07 *     2.60 f    0.95
+  PC/misaligned_instr_out (msrv32_pc)                     0.00       2.60 f    
+  misaligned_instr_out_UPF_LS/Y (LSDNSSX8_LVT)            0.07 *     2.67 f    0.75
+  MC/misaligned_instr_in (msrv32_machine_control)         0.00       2.67 f    
+  MC/U89/Y (AO21X1_LVT)                                   0.10 *     2.77 f    0.75
+  MC/U90/Y (INVX4_LVT)                                    0.05 *     2.82 r    0.75
+  MC/U91/Y (INVX4_LVT)                                    0.01 *     2.83 f    0.75
+  MC/U92/Y (MUX21X2_LVT)                                  0.10 *     2.93 f    0.75
+  MC/cause_out_reg[1]/D (DFFX1_LVT)                       0.00 *     2.93 f    0.75
+  data arrival time                                                  2.93      
+
+  clock clk (rise edge)                                   3.00       3.00      
+  clock network delay (ideal)                             0.00       3.00      
+  MC/cause_out_reg[1]/CLK (DFFX1_LVT)                     0.00       3.00 r    
+  library setup time                                     -0.07       2.93      
+  data required time                                                 2.93      
+  ------------------------------------------------------------------------------------
+  data required time                                                 2.93      
+  data arrival time                                                 -2.93      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.00      
+
+
+1
